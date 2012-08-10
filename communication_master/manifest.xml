@@ -1,0 +1,18 @@
+<package>
+  <description brief="communication_master">
+	Master communication node for use with multiple-robot distributed systems.
+	Provides 1) request_status node for getting status updates from all robots;
+		 and 2) communication_master node that publishes hive updates to all robots.
+  </description>
+  <author>Antonella Wilby</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/communication_master</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="irobot_mudd"/>
+  <depend package="irobot_nav"/>
+</package>
+
+

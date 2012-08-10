@@ -1,0 +1,48 @@
+=================================
+    Communication Master Node
+=================================
+
+This ROS package provides communication nodes for publishing/subscribing and
+running services within a distributed multiple-robot system.
+
+It provides the following nodes:
+    1) request_robot_status: requests status updates from all robots in the system
+    2) communication_master: publishes status updates to all robots in the system
+
+
+===== DEPENDENCIES =====
+
+ROS Electric
+formation_control (ROS package)
+
+
+
+===== USE WITH THESE ROS PACKAGES =====
+
+hive_master
+formation_control
+
+
+
+===== INSTALLATION =====
+
+1) Move the source of this package ot the ROS workspace folder
+
+2) From inside the package, run rosmake.
+   - If rosmake fails,
+     - check that the required packages are installed
+     - check the CMakeCache.txt file in the build folder. If it exists,
+       remove it and run rosmake again.
+
+
+
+===== HOW TO LAUNCH =====
+
+1) If not already running, launch roscore
+2) Run the command:
+
+
+
+===== CONTACT INFORMATION =====
+
+With questions, contact Antonella Wilby: awilby@ucsd.edu
