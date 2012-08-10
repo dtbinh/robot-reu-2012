@@ -1,0 +1,58 @@
+=========================================
+   Ducklings (a.k.a Follow the Leader)
+=========================================
+
+This 
+
+
+
+
+===== DEPENDENCIES =====
+
+ROS Electric
+
+
+
+===== INSTALLATION =====
+
+
+
+
+
+===== HOW TO LAUNCH =====
+
+
+
+
+
+
+
+
+===== COMMANDS =====
+
+With any interface selected, these commands are available:
+	ESC/q   : quit
+	h	: display help menu at command prompt
+	s	: save thresholds to file
+	l	: load thresholds from file
+	c	: mousedrags will no longer set thresholds, kept values will be cleared
+	a	: mousedrag will assign thresholds to area within drag
+		  resets on new click and drag
+	r	: mousedrags will remove the area under consideration
+		  must have set an area in 'a' mode first
+	m	: mousedrags will add the area under consideration
+		  must have set an area in 'a' mode first
+	t	: show total threshold image in threshold window
+	A	: activate robot for moving, press A again to deactivate
+	1 	: begin state machine as leader - follows lines
+	2	: begin state machine as follower - tracks colors
+
+
+
+===== CONTACT INFORMATION =====
+
+With questions, contact:
+	Antonella Wilby: awilby@ucsd.edu
+	Vivian Wehner: vwehner@hmc.edu
+
+

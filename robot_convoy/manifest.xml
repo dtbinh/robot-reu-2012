@@ -1,0 +1,20 @@
+<package>
+
+  <description brief="robot_convoy">
+	This ROS package provides leader-follower behavior for a line of robots.
+	Robots require a Kinect or other color camera. Robots track a colored 
+	target on the leader robot. Robots also communicate, and can send "stop"
+	and "start" commands to the others if they lose their target.
+  </description>
+  <author>Antonella Wilby and Vivian Wehner</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/robot_convoy</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="irobot_mudd"/>
+
+</package>
+
+

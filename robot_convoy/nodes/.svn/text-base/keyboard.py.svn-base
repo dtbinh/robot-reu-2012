@@ -1,0 +1,28 @@
+# Antonella Wilby and Vivian Wehner
+
+#!/usr/bin/env python
+import roslib; roslib.load_manifest('irobot_mudd')
+import rospy
+import cv
+import cv_bridge
+from std_msgs.msg import Int8
+
+def keyboard():
+    pub = rospy.Publisher('keyboard', Int8)
+    rospy.init_node('keyboard')
+    
+    while not rospy.is_shutdown():
+        key_press = cv.WaitKey(5) & 255
+        if key_press != 255:
+            #str = "hello world %s"%rospy.get_time()
+            rospy.loginfo(key_press)
+            pub.publish(int(key_press))
+        
+        
+if __name__ == '__main__':
+    try:
+        keyboard()
+    except rospy.ROSInterruptException: pass
+    
+    
+    

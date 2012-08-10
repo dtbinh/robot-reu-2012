@@ -1,0 +1,18 @@
+# Antonella Wilby and Vivian Wehner
+
+#!/usr/bin/env python
+import roslib; roslib.load_manifest('irobot_mudd')
+import rospy
+import irobot_mudd
+import cv_bridge
+import cv
+import sensor_msgs.msg as sm
+from std_msgs.msg import String
+from irobot_mudd.srv import *
+from irobot_mudd.msg import *
+
+
+class SharedData:
+    def __init__(self):
+        self.state = "start"
+        self.myState = "start"

@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- Launch Kinect drivers -->
+  <include file="$(find openni_camera)/launch/openni_node.launch" />
+
+  <!-- Launch iRobot Create drivers -->
+  <node name="irobot_drivers" pkg="irobot_mudd" type="driver.py">
+    <param name="port" value="/dev/ttyUSB1"/>
+  </node>
+
+  <!-- Launch Robot Convoy node -->
+  <node name="navigator" pkg="robot_convoy" type="Navigator.py" />
+
+</launch>
