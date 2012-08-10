@@ -1,0 +1,21 @@
+<launch>
+
+
+  <!-- Launch Kinect node -->
+  <!-- <include file="$(find openni_camera)/launch/openni_node.launch"/> -->
+
+
+  <!-- Launch Muddbot Drivers -->
+  <node name="irobot_drivers" pkg="irobot_mudd" type="driver.py">
+    <param name="port" value="/dev/ttyUSB0" />
+  </node>
+
+
+  <!-- Launch Formation/Assignment Control node -->
+  <node name="formation_control" pkg="formation_assignment" type="formation_control.py">
+    <!-- <param name="" value="" /> -->
+  </node>
+
+
+</launch>  
+

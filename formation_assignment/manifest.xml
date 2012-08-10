@@ -1,0 +1,18 @@
+<package>
+  <description brief="formation_assignment">
+	Controls assignment and formation synthesis for any number of robots.
+  </description>
+  <author>Antonella Wilby</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/formation_assignment</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="irobot_mudd"/>
+  <depend package="irobot_mudd2"/>
+  <depend package="cv_bridge" />
+
+</package>
+
+
