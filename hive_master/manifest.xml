@@ -1,0 +1,17 @@
+<package>
+  <description brief="hive_master">
+	This package lets user enter commands to be sent to every robot in the hive.
+	Commands are published on a topic.  The hive_command node should be run on
+		the master computer for the hive.
+  </description>
+  <author>Antonella Wilby</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/hive_master</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+
+</package>
+
+
