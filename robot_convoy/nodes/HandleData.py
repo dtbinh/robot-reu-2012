@@ -292,6 +292,9 @@ def check_key_press(D, key_press):
             print "Cannot switch modes, need a starting area first. Press 'i' " + \
                 "to select a starting area."
 
+    elif key_press == ord('t'):
+        D.current_threshold = D.threshed_image
+
     # Activate the robot for moving
     elif key_press == ord('A'):
         StateMachine.activate()
@@ -334,27 +337,23 @@ def check_key_press(D, key_press):
     
     
 
-    #Robot keyboard driving controls, arrows behave as would be expected.
-    elif key_press == 82:
+    #Robot keyboard driving controls
+    elif key_press == 82:		#up arrow: drive forward
 	R.move(250, 250)
 
-    elif key_press == 84:
+    elif key_press == 84:		#down arrow: drive backward
 	R.move(-250, -250)
     
-    # Move left
-    elif key_press == 81:
+    elif key_press == 81:		#left arrow: turn left
         R.move(-250, 250)
 
-    # move right
-    elif key_press == 83:
+    elif key_press == 83:		#right arrow: turn right
 	R.move(250,-250)
     
-    # Spacebar- don't move
-    elif key_press == 32:
+    elif key_press == 32:		#spacebar: stop
         R.move(0,0)
             
-    elif key_press == ord('t'):
-        D.current_threshold = D.threshed_image
+
 
 #########################################################################
 ##################     Connectivity functions	#########################
